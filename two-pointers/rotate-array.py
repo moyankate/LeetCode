@@ -10,8 +10,6 @@ class Solution(object):
         self.reverse(nums, 0, n-1)
         self.reverse(nums, 0, k-1)
         self.reverse(nums, k, n-1)
-
-        return nums
     
     def reverse(self, nums, l, r):
         while l < r :
