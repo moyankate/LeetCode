@@ -7,6 +7,8 @@ class Solution(object):
         :type n: int
         :rtype: None Do not return anything, modify nums1 in-place instead.
         """
+        # 从后往前对比每个list 里的valid element，把更大的那一个加到nums1后面
+        # 3 个指针，分别对应nums1, nums2目前要比较的对象和nums1 后面的空位
         p1 = m - 1
         p2 = n - 1
         p = m + n - 1
